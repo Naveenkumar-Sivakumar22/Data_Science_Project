@@ -1,0 +1,38 @@
+# AI Echo: Your Smartest Conversational Partner
+
+## Project Overview
+**AI Echo** is a sentiment analysis project focused on natural language processing (NLP) of user reviews for a ChatGPT application. The system classifies feedback into positive, neutral, or negative categories to help organizations gain insights into customer satisfaction, manage brand reputation, and identify areas for feature enhancement.
+
+## Domain
+Customer Experience & Business Analytics
+
+## Skills & Technologies
+- **NLP Techniques:** Text cleaning, tokenization, lemmatization, and language detection.
+- **Machine Learning & Deep Learning:** Naïve Bayes, Logistic Regression, Random Forest, LSTMs, and Transformers (BERT, GPT).
+- **Tools:** Python (Pandas, NLTK, Scikit-learn), Streamlit (for visualization).
+- **Feature Engineering:** TF-IDF and Word Embeddings.
+
+## Problem Statement
+The goal is to analyze user feedback to determine sentiment trends. This helps in understanding what users love or dislike about the ChatGPT application, allowing for data-driven decisions in product updates and marketing strategies.
+
+## Dataset Features
+The project utilizes the `chatgpt_style_reviews_dataset.xlsx`, which includes:
+- **Date & Title:** When the review was submitted and its summary.
+- **Review Text:** The core body for sentiment analysis.
+- **Rating:** Numerical scores (1-5).
+- **User Metadata:** Username, location, and platform (Web/Mobile).
+- **Technical Context:** ChatGPT version and verified purchase status.
+
+## Approach
+1. **Data Preprocessing:** Cleaning text by removing special characters, stopwords, and punctuation.
+2. **Exploratory Data Analysis (EDA):** Visualizing word clouds, sentiment distributions, and rating trends over time.
+3. **Model Training:** Converting text to numerical features and training classification models.
+4. **Evaluation:** Assessing performance using Accuracy, Precision, Recall, F1-Score, and AUC-ROC.
+5. **Deployment:** Creating a web-based dashboard using Streamlit for real-time sentiment insights.
+
+## Project Deliverables
+- Cleaned and preprocessed dataset.
+- EDA report with comprehensive visualizations.
+- Trained machine learning/deep learning model.
+- Interactive web dashboard for sentiment trends.
+- Detailed model performance report and actionable insights.
