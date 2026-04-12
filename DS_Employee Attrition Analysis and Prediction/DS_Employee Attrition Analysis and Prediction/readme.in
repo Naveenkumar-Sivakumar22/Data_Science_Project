@@ -1,0 +1,42 @@
+# Employee Attrition Analysis and Prediction
+
+## Project Overview
+This project focuses on **HR Analytics** to predict and prevent employee attrition. By analyzing employee data, identifying key drivers of turnover, and building predictive machine learning models, the system helps organizations implement proactive retention strategies, optimize costs, and improve workforce planning.
+
+## Domain
+HR Analytics: Predicting and Preventing Employee Attrition
+
+## Skills & Technologies
+- **Data Science:** Data Preprocessing, Cleaning, Exploratory Data Analysis (EDA), Feature Engineering.
+- **Machine Learning:** Classification Models (Logistic Regression, Decision Trees, Random Forests), Model Evaluation (Accuracy, Precision, Recall, F1-Score, AUC-ROC).
+- **Tools:** Python, Scikit-learn, Matplotlib, Streamlit (for Dashboards), Pickle/Joblib.
+
+## Problem Statement
+Employee turnover leads to high recruitment costs and reduced productivity. This project aims to identify at-risk employees and the factors driving them to leave, such as job satisfaction, compensation, and work-life balance, to support data-driven decision-making.
+
+## Key Features
+- **Attrition Prediction:** Classifies whether an employee is likely to stay or leave.
+- **Performance & Promotion Insights:** Predicts performance ratings and promotion likelihood.
+- **Interactive Dashboards:** Streamlit-based visualization of attrition trends and at-risk employee lists.
+- **Key Driver Identification:** Highlights significant factors influencing turnover.
+
+## Dataset Features
+The model utilizes a comprehensive dataset including:
+- **Demographics:** Age, Gender, Education, Marital Status.
+- **Job Details:** Department, Job Role, Job Level, Total Working Years, Tenure at Company.
+- **Satisfaction & Environment:** Job Satisfaction, Environment Satisfaction, Relationship Satisfaction, Work-Life Balance.
+- **Compensation:** Monthly Income, Daily/Hourly Rates, Stock Option Level, Salary Hike Percentage.
+- **Work Patterns:** Overtime, Business Travel, Distance from Home.
+
+## Approach
+1. **Data Collection & Cleaning:** Handling missing values, outliers, and categorical variables.
+2. **Exploratory Data Analysis (EDA):** Identifying patterns and correlations between features like salary/satisfaction and attrition.
+3. **Feature Engineering:** Creating new metrics like engagement scores or tenure categories.
+4. **Model Building & Evaluation:** Training classification algorithms and assessing performance using metrics like AUC-ROC and F1-Score.
+5. **Deployment:** Developing a Streamlit application for HR teams to interact with insights.
+
+## Project Deliverables
+- Python source code for processing and model training.
+- Trained model files (Pickle/Joblib).
+- Cleaned dataset (CSV/Excel).
+- Technical documentation and project report.
