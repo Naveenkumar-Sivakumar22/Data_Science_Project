@@ -1,0 +1,41 @@
+# AgriData Explorer: Understanding Indian Agriculture with EDA
+
+## Project Overview
+**AgriData Explorer** is a data visualization platform designed to integrate and analyze fragmented agricultural data from various states and districts in India. The project focuses on crop production statistics, yields, and farming areas to help stakeholders like farmers, policymakers, and researchers make informed, data-driven decisions.
+
+## Domain
+Agricultural (Crop production statistics, yields, and farming area in India)
+
+## Skills & Technologies
+- **Programming:** Python (Extraction, Cleaning, EDA)
+- **Database:** SQL
+- **Visualization:** Power BI, Plotly
+- **Machine Learning:** Yield forecasting and crop recommendations
+
+## Problem Statement
+India's agricultural sector faces challenges in data management due to complexity and lack of easy access. This platform aims to provide insights into crop production and regional disparities to optimize crop choices and target policy interventions.
+
+## Key Features
+- **Interactive Dashboards:** Real-time visualization of area, production, and yield.
+- **Geographical Analysis:** Heatmaps to show crop concentration and performance across states.
+- **Trend Identification:** Time-series analysis of production for major crops like rice, wheat, and sugarcane.
+- **Advanced Analytics:** Machine learning integration for forecasting and diversification recommendations.
+
+## Approach
+1.  **Data Collection & Cleaning:** address missing values and standardize units (hectares, tons, kg).
+2.  **Exploratory Data Analysis (EDA):** Identify top-performing crops and regional production patterns.
+3.  **SQL Integration:** Answer complex agricultural questions through structured queries.
+4.  **Power BI Dashboard:** Design a user-friendly interface with slicers for crop type, region, and year.
+
+## Data Schema (ICRISAT-District Level Data)
+- **Location:** Dist Name, State Name, Dist Code, State Code.
+- **Temporal:** Year.
+- **Crop Metrics:** Area (1000 ha), Production (1000 tons), Yield (Kg per ha).
+- **Crops Covered:** Rice, Wheat, Sorghum, Pearl Millet, Maize, Cotton, Oilseeds, Sugarcane, etc.
+
+## Project Deliverables
+- Python scripts for data extraction and cleaning.
+- SQL queries for database population and analytical reporting.
+- Normalized SQL Database.
+- Interactive Power BI Reports and Dashboards.
+- Technical documentation.
