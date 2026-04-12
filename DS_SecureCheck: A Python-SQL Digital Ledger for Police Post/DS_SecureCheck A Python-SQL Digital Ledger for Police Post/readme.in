@@ -1,0 +1,43 @@
+# SecureCheck: A Python-SQL Digital Ledger for Police Post Logs
+
+## Project Overview
+**SecureCheck** is a centralized digital ledger system designed for law enforcement to log, track, and analyze vehicle movements at police check posts. The project replaces manual logging with an SQL-based database and a Python-powered Streamlit dashboard, providing real-time insights, security alerts, and crime pattern analysis.
+
+## Domain
+Law Enforcement & Public Safety / Real-time Monitoring Systems
+
+## Skills & Technologies
+- **Language:** Python (Pandas, SQLAlchemy)
+- **Database:** SQL (PostgreSQL / MySQL / SQLite)
+- **Dashboard:** Streamlit
+- **Data Analysis:** Data Preprocessing, Trend Analysis
+
+## Problem Statement
+Traditional manual logging at police check posts is inefficient and slows down security processes. This project aims to centralize data to allow for faster vehicle tracking, automated suspect identification, and better multi-location monitoring.
+
+## Key Features
+- **Real-time Logging:** Digital entry for vehicles and personnel.
+- **Automated Alerts:** Instant identification of flagged or suspect vehicles.
+- **Advanced Analytics:** Analysis of crime patterns, violation trends, and check post efficiency.
+- **Search Filters:** Quick SQL-based lookups for officer reports and vehicle logs.
+
+## Data Schema (Traffic Stops Dataset)
+The system processes data containing the following attributes:
+- **Stop Details:** Date, Time, Country, Duration.
+- **Driver Demographics:** Gender, Age, Race.
+- **Violation Info:** Type of violation, Raw violation description.
+- **Search & Outcome:** Search conducted (True/False), Search type, Stop outcome (Citation/Arrest), Drug-related status.
+
+## Approach
+1.  **Data Collection & Storage:** Define SQL schema and store records in a relational database.
+2.  **Data Processing:** Use Python to clean data (handle missing/NaN values).
+3.  **Database Design:** Implement tables with optimized queries and indexing.
+4.  **Dashboard Creation:** Build a Streamlit interface to visualize logs and generate reports.
+
+## Evaluation Metrics
+- **Query Execution Time:** Optimization for fast lookups.
+- **Data Accuracy:** Reliability of log entries.
+- **Violation Detection Rate:** Efficiency in identifying flagged vehicles.
+
+## Project Timeline
+The project is scheduled for completion within **10 days** from the assigned date.
