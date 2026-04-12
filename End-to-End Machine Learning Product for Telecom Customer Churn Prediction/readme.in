@@ -1,0 +1,53 @@
+# Telecom Customer Churn Prediction: End-to-End ML Product
+
+## Project Summary
+As a Data Scientist for a telecom company, I am developing an end-to-end Machine Learning product to mitigate high customer churn, which is currently impacting revenue and growth. By analyzing historical data—including demographics, account details, subscribed services, and billing information—this product will predict churn risk, explain the underlying drivers behind customer decisions using SHAP, and enable proactive business retention strategies. The solution exposes these predictions via a production-ready REST API, facilitating real-time integration into business workflows. This project directly supports critical business objectives, such as identifying high-risk customers, reducing acquisition costs, improving customer lifetime value (CLV), and providing management with the data-driven insights necessary for personalized retention offers and strategic decision-making.
+
+## 1. Project Overview
+This project involves building a comprehensive Machine Learning solution for a telecom company to predict and understand customer churn. The goal is to provide actionable insights and a deployable API to help the business take proactive steps in retaining customers at high risk of leaving.
+
+## 2. Business Problem & Use Cases
+High customer churn negatively impacts revenue and growth in the competitive telecom sector. This product addresses the following business needs:
+* Identify customers at high risk of churn
+* Reduce customer acquisition cost
+* Improve customer lifetime value (CLV)
+* Enable personalized retention offers
+* Support management decisions with data-driven insights
+
+## 3. Dataset Description
+The model utilizes historical customer data across several categories:
+* Demographics: SeniorCitizen, Partner, Dependents
+* Account & Services: PhoneService, MultipleLines, Internet Service, OnlineSecurity, OnlineBackup, Device Protection, TechSupport, StreamingTV, StreamingMovies
+* Billing & Contract: Contract, Paperless Billing, PaymentMethod, MonthlyCharges, TotalCharges, tenure
+* Target Variable: Churn (Yes/No)
+
+## 4. Technical Approach
+### Data Processing & EDA
+* Exploratory Data Analysis (EDA): Analyzing the impact of tenure, contract types, and service usage on churn rates.
+* Cleaning: Handling missing values in TotalCharges, dropping non-informative columns like customerID, and scaling numerical features.
+* Feature Engineering: Creating business-centric features like average monthly spend and tenure buckets.
+
+### Modeling & Explainability
+* Class Imbalance: Addressing churn imbalance using class weights or resampling techniques.
+* Model Selection: Comparing Logistic Regression, Random Forest, and Gradient Boosting (XGBoost).
+* Explainable AI (XAI): Using SHAP for global feature importance and local explanations.
+
+### Deployment
+* REST API: A production-ready API built with Flask or FastAPI featuring a /predict endpoint.
+
+## 5. Technologies Used
+* Core Programming: Python
+* Data Processing: Pandas, NumPy
+* Visualization: Matplotlib, Seaborn
+* ML modeling: Scikit-learn
+* Explainability: SHAP
+* API deployment: Flask/FastAPI
+* Version control: Git & GitHub
+
+## 6. Project Structure
+data/        # Dataset files
+notebooks/   # EDA, Modeling, and Explainability notebooks
+src/         # Source code for the application
+models/      # Saved model artifacts
+api/         # REST API implementation
+utils/       # Helper scripts
