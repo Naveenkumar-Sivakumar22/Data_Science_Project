@@ -1,0 +1,52 @@
+# Swiggy’s Restaurant Recommendation System using Streamlit
+
+## Project Overview
+The objective of this project is to build a personalized restaurant recommendation system based on Swiggy's restaurant data. By leveraging machine learning techniques like clustering and similarity measures, the system provides tailored restaurant suggestions to users based on their location, budget, and cuisine preferences via an interactive Streamlit web application.
+
+## Domain
+Recommendation Systems and Data Analytics
+
+## Skills & Technologies
+- **Language:** Python
+- **Data Preprocessing:** Cleaning, Duplicate Removal, Handling Missing Values
+- **Feature Engineering:** One-Hot Encoding (for City and Cuisine)
+- **Machine Learning:** Clustering (K-Means) or Similarity Measures (Cosine Similarity)
+- **Web Framework:** Streamlit
+- **Serialization:** Pickle (for saving encoders)
+
+## Problem Statement
+With thousands of dining options available, users often experience "choice overload." This project aims to build an engine that processes a CSV dataset containing restaurant attributes (rating, cost, cuisine, etc.) to return the most relevant suggestions, thereby improving customer experience and decision-making efficiency.
+
+## Dataset Description
+The system utilizes a dataset with the following attributes:
+- **Categorical:** Name, City, Cuisine
+- **Numerical:** Rating, Rating Count, Cost
+- **Metadata:** ID, License Number, Link, Address, Menu
+
+## Approach
+1. **Data Understanding & Cleaning**:
+   - Identify and remove duplicate rows.
+   - Handle missing values through imputation or deletion.
+   - Export result to `cleaned_data.csv`.
+2. **Data Preprocessing**:
+   - Apply **One-Hot Encoding** to categorical columns (City, Cuisine).
+   - Save the encoder as `encoder.pkl`.
+   - Ensure the final `encoded_data.csv` is entirely numerical and matches the indices of the cleaned data.
+3. **Recommendation Methodology**:
+   - Implement **K-Means Clustering** or **Cosine Similarity** to identify similar restaurants.
+   - Map numerical indices back to the human-readable `cleaned_data.csv`.
+4. **Streamlit Application**:
+   - Create a UI to accept user preferences (City, Cuisine, Rating, Price).
+   - Display recommendations in a clean, visual format.
+
+## Project Deliverables
+- `cleaned_data.csv`: The processed dataset with duplicates and nulls handled.
+- `encoded_data.csv`: The numerical dataset ready for machine learning.
+- `encoder.pkl`: Serialized One-Hot Encoder for real-time app use.
+- `app.py`: Streamlit source code.
+- **Technical Report**: Documentation of methodology, cleaning steps, and insights.
+
+## Evaluation Metrics
+- **Recommendation Quality**: Relevance of suggestions based on input criteria.
+- **App Usability**: Intuitive interface and response time.
+- **Data Integrity**: Successful mapping between encoded and original datasets.
