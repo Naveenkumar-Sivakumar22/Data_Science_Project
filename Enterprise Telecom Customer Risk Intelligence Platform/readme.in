@@ -1,0 +1,48 @@
+# Enterprise-Grade Recommendation System with Deep Learning
+
+## Project Overview
+As a Senior Data Scientist at a digital platform, you are tasked with building an end-to-end Recommendation System for a scenario where real user interaction data is limited or unavailable. This project involves generating realistic synthetic data, building advanced models, and exposing them through an application layer.
+
+## Key Features
+* **Synthetic Data Generation:** Programmatic creation of 5,000+ users, 2,000+ items, and 100,000+ interactions using Faker and controlled probability distributions.
+* **Multi-Model Approach:**
+    * Baselines: Popularity-based, Collaborative Filtering (User/Item), and Matrix Factorization.
+    * NLP: Content-based recommendations using TF-IDF on item descriptions.
+    * Deep Learning: Neural Collaborative Filtering (NCF) using PyTorch with user/item embeddings.
+    * Hybrid System: Scoring fusion combining collaborative, content, and deep learning models.
+* **Evaluation & Explainability:** Tracking precision@K, recall@K, MAP@K, and NDCG@K while providing justification for recommendations.
+* **Application Layer:** Implementation of either a FastAPI service or a Streamlit dashboard.
+
+## Technical Stack
+* **Synthetic Data:** Faker, NumPy
+* **Data Processing:** Pandas
+* **ML Recommenders:** Scikit-learn, Surprise
+* **NLP:** TF-IDF
+* **Deep Learning:** PyTorch
+* **API/UI:** FastAPI / Streamlit
+* **Version Control:** Git
+
+## Project Structure
+The repository must follow the directory structure below:
+```
+├── data/
+│   └── synthetic_data/
+├── notebooks/
+│   ├── Advanced_EDA.ipynb
+│   ├── Feature_Engineering.ipynb
+│   ├── ML_Pipeline.ipynb
+│   └── Deep_Learning_Model.ipynb
+├── src/
+├── models/
+├── app/
+└── reports/
+```
+
+## Mandatory Notebooks & Reports
+* **Notebooks:** Advanced EDA, Feature Engineering, ML Pipeline, Deep Learning Model, Explainability & Governance.
+* **Reports:** Data Risk Assessment, Cost Optimization, Governance & Fairness, and Final Business Recommendations.
+
+## Submission Guidelines
+* GitHub Repo Name: deep-learning-recommendation-system-{yourname}
+* Notebook-only solutions will NOT be accepted.
+* Either FastAPI or Streamlit is mandatory.
